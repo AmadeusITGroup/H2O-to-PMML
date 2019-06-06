@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jaxb:bindings
+	xmlns:jaxb="http://java.sun.com/xml/ns/jaxb"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema" jaxb:version="2.0">
+	<jaxb:bindings schemaLocation="./pmml-4-3.xsd">
+		<jaxb:bindings node="//xs:simpleType[@name='DELIMITER']">
+			<jaxb:typesafeEnumClass name="DELIMITERENUM" />
+		</jaxb:bindings>
+	</jaxb:bindings>
+	<jaxb:bindings schemaLocation="./pmml-4-3.xsd">
+		<jaxb:bindings node="//xs:simpleType[@name='TIME-ANCHOR']">
+			<!-- simpleTypes cannot be converted to class but to enum only -->
+			<jaxb:typesafeEnumClass name="TIMEANCHORENUM" />
+		</jaxb:bindings>
+	</jaxb:bindings>
+</jaxb:bindings>
